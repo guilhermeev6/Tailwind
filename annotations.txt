@@ -1,0 +1,12 @@
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch - Roda o Tailwind
+
+Porém, é possível nomear um caminho para não ficar reescrevendo de novo:
+1. Coloque no package.json:
+  "scripts": {
+      "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch" //
+    }
+
+"tailwind" - o nome do caminho
+
+2. Digite o comando com ocaminho criado:
+npm run <CAMINHO>
